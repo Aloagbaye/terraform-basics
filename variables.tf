@@ -13,3 +13,23 @@ variable "region" {
   type        = string
   default     = "us-central1"
 }
+
+variable "environment" {
+  description = "Deployment environment (dev, prod)"
+  type        = string
+}
+
+variable "service_account_name" {
+  description = "Service account name"
+  type        = string
+}
+
+variable "pubsub_topic_name" {
+  description = "Base name for Pub/Sub topic"
+  type        = string
+}
+
+variable "pubsub_subscription_name" {
+  description = "Base name for Pub/Sub subscription"
+  type        = string
+}
