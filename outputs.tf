@@ -17,3 +17,7 @@ output "pubsub_topic" {
 output "pubsub_subscription" {
   value = google_pubsub_subscription.ml_subscription.name
 }
+
+output "pipeline_root" {
+  value = "gs://${google_storage_bucket.example_bucket.name}/pipelines"
+}
